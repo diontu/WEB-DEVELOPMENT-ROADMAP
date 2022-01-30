@@ -21,10 +21,10 @@ Feel to start wherever you'd like. :)
   - [How To Read This Document](#how-to-read-this-document)
   - [Understanding the Internet](#understanding-the-internet)
   - [What is front-end?](#what-is-front-end)
-  - [What is back-end?](#what-is-back-end)
   - [HTML](#html)
   - [CSS](#css)
   - [JavaScript](#javascript)
+  - [What is back-end?](#what-is-back-end)
 <!-- ============================================================================= -->
 ## Understanding the Internet
 ### 1. Prerequisite
@@ -34,7 +34,7 @@ In simple terms, it is a network of computers connected together from all over t
 ### 3. Why it's important
 As these computers are connected, this means that we are able to send information from one computer to another. This is important in web development because we, as web developers, develop websites and in order for someone else on another computer to see the website you built, the website has to be sent to their computer.
 ### 4. How much I need to know?
-I've simplified the above explanation of the internet so that you can understand the main idea of the idea (which is the sending of information). IMO, the explanation in [3. Why it's important](#3-why-its-important) is enough for web development. It's not required that you know exactly how the internet infrastructure is set up or how it first got started. However, I do believe that you should come back to this and understand the internet have a better grasp of how the internet works through the [resources](#5-resources) listed.
+I've simplified the above explanation of the internet so that you can understand the main idea of the idea (which is the sending of information). IMO, the explanation in [3. Why it's important](#3-why-its-important) is enough for web development. It's not required that you know exactly how the internet infrastructure is set up or how it first got started. However, I do believe that you should come back to this and understand the internet to have a better grasp of how the internet works through the [resources](#5-resources) listed.
 ### 5. Resources
 - The internet, explained ([https://www.vox.com/2014/6/16/18076282/the-internet][understanding-the-internet-resource-0])
 - How Does the Internet Work: A Step-by-Step Pictorial ([https://www.hp.com/us-en/shop/tech-takes/how-does-the-internet-work][understanding-the-internet-resource-1])
@@ -60,7 +60,7 @@ N/A
 ### 1. Prerequisite
 N/A
 ### 2. What is it?
-Think of HTML as the blueprints to a website. Whatever elements (buttons, text, lines, etc.) we want to add to a website, we use HTML to add it. It is used to described the structure of a website. HTML stands for Hyper Text Markup Language. Hyper Text is just text with links to other websites or web pages and Markup Language is just the electronic document in a standard text-encoding system that is used to structure the website or web page.
+Think of HTML as the blueprints to a website. Whatever elements (buttons, text, lines, etc.) we want to add to a website, we use HTML to add it. It is used to describe the structure of a website. HTML stands for Hyper Text Markup Language. Hyper Text is just text with links to other websites or web pages and Markup Language is just the electronic document in a standard text-encoding system that is used to structure the website or web page.
 ### 3. Why it's important
 As stated in [2. What is it?](2-what-is-it-1), HTML is used to describe the structure of a website. It is the standard Markup Language that is used for writing websites. Hence, it is what you will be using as well.
 ### 4. How much I need to know?
@@ -192,7 +192,11 @@ It is required to understand the following:
 - array iteration
 - date formats
 - hoisting
+- classes
+- constructor
 - this keyword
+- promises
+- async/await
 
 On top of understanding the above material, I recommend learning the best practices while using JavaScript as outlined in the following link: [https://www.w3schools.com/js/js_best_practices.asp][js-resource-3]
 ### 5. Resources
@@ -201,12 +205,56 @@ On top of understanding the above material, I recommend learning the best practi
 - JavaScript Tutorial ([https://www.w3schools.com/js/default.asp][js-resource-2])
 - JavaScript Best Practices ([https://www.w3schools.com/js/js_best_practices.asp][js-resource-3])
 ### 6. Time frame
+~ 2 weeks
 
 <!-- javascript links -->
 [js-resource-0]: https://www.freecodecamp.org/news/whats-the-difference-between-javascript-and-ecmascript-cba48c73a2b5/
 [js-resource-1]: https://www.w3schools.com/js/js_htmldom.asp
 [js-resource-2]: https://www.w3schools.com/js/default.asp
 [js-resource-3]: https://www.w3schools.com/js/js_best_practices.asp
+<!-- ============================================================================= -->
+## React (JavaScript Library)
+### 1. Prerequisite
+- JavaScript, with ES6
+### 2. What is it?
+React is a JavaScript library for building user interfaces. React revolves around the idea of building encapsulated components, where each component manages their own state.
+### 3. Why it's important
+According to StackOverflow's 2021 developer survey, React was the most commonly used web framework and is the most wanted framework as well. Aside from popularity, it makes use of reusing components and optimizing renders of the DOM by using what React calls the virtual DOM.
+### 4. How much I need to know?
+Up until now, it was fine using the interactive environment offered by W3Schools in their tutorials. However, I highly recommend setting up a local environment for React on your computer as it will introduce you to a tool (NPM (node package manager) or yarn) that will give you access to the vast amount of JavaScript libraries available online. To perform the set up on your computer, follow "Setup Option 2: Local Development Environment" in the following link: [https://reactjs.org/tutorial/tutorial.html#setup-for-the-tutorial][react-resource-2]
+
+For React, it is required that you learn the "Main Concepts" as outlined on the offical React website [https://reactjs.org/docs/hello-world.html][react-resource-3]. This includes:
+- JSX
+- rendering elements
+- components and props
+- state and lifecycle (focus on function components)
+- handling events
+- conditional rendering
+- lists and keys
+- forms
+- lifting state up
+- composition vs inheritance
+- thinking in react
+
+There are many great resources to get started with React. I recommend learning React either by following the tutorial on the official React website [https://reactjs.org/tutorial/tutorial.html][react-resource-2] or by following along with the following video by Kent C. Dodds, creator of React Testing Library: [https://egghead.io/courses/the-beginner-s-guide-to-react][react-resource-1]
+### 5. Resources
+### 6. Time frame
+
+<!-- react links -->
+[react-resource-0]: https://insights.stackoverflow.com/survey/2021#most-popular-technologies-webframe
+[react-resource-1]: https://egghead.io/courses/the-beginner-s-guide-to-react
+[react-resource-2]: https://reactjs.org/tutorial/tutorial.html#setup-for-the-tutorial
+[react-resource-3]: https://reactjs.org/docs/hello-world.html
+<!-- ============================================================================= -->
+## Git and GitHub
+### 1. Prerequisite
+N/A
+### 2. What is it?
+### 3. Why it's important
+### 4. How much I need to know?
+### 5. Resources
+### 6. Time frame
+
 <!-- ============================================================================= -->
 ## What is back-end?
 ### 1. Prerequisite
