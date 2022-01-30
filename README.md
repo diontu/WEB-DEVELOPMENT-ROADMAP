@@ -24,6 +24,8 @@ Feel to start wherever you'd like. :)
   - [HTML](#html)
   - [CSS](#css)
   - [JavaScript](#javascript)
+  - [React (JavaScript Library)](#react-javascript-library)
+  - [Git and GitHub](#git-and-github)
   - [What is back-end?](#what-is-back-end)
 <!-- ============================================================================= -->
 ## Understanding the Internet
@@ -239,6 +241,7 @@ For React, it is required that you learn the "Main Concepts" as outlined on the 
 There are many great resources to get started with React. I recommend learning React either by following the tutorial on the official React website [https://reactjs.org/tutorial/tutorial.html][react-resource-2] or by following along with the following video by Kent C. Dodds, creator of React Testing Library: [https://egghead.io/courses/the-beginner-s-guide-to-react][react-resource-1]
 ### 5. Resources
 ### 6. Time frame
+~ 2 weeks
 
 <!-- react links -->
 [react-resource-0]: https://insights.stackoverflow.com/survey/2021#most-popular-technologies-webframe
