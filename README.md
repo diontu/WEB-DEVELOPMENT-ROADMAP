@@ -1,12 +1,4 @@
 # WEB-DEVELOPMENT-ROADMAP
-
-## Table of Content
-  - [Introduction](#introduction)
-  - [How To Read This Document](#how-to-read-this-document)
-  - [Understanding the Internet](#understanding-the-internet)
-  - [HTML](#html)
-  - [CSS](#css)
-  - [JavaScript](#javascript)
 <!-- ============================================================================= -->
 ## Introduction
 The roadmap proposed here is meant for those that are getting started with web development and have a general interest towards it. Whether you're getting started or an experienced developer, this document can be useful to learning the topics that you need to know to be successful in web development. No previous knowledge is required. However, an open mind is appreciated as there will a lot of topics covered within this roadmap.
@@ -23,6 +15,16 @@ The topics covered within the roadmap will be in the following format:
 6. **Time frame**
 
 Feel to start wherever you'd like. :)
+<!-- ============================================================================= -->
+## Table of Content
+  - [Introduction](#introduction)
+  - [How To Read This Document](#how-to-read-this-document)
+  - [Understanding the Internet](#understanding-the-internet)
+  - [What is front-end?](#what-is-front-end)
+  - [What is back-end?](#what-is-back-end)
+  - [HTML](#html)
+  - [CSS](#css)
+  - [JavaScript](#javascript)
 <!-- ============================================================================= -->
 ## Understanding the Internet
 ### 1. Prerequisite
@@ -45,6 +47,15 @@ I've simplified the above explanation of the internet so that you can understand
 [understanding-the-internet-resource-1]: https://www.hp.com/us-en/shop/tech-takes/how-does-the-internet-work
 [understanding-the-internet-resource-2]: https://techterms.com/definition/internet
 <!-- ============================================================================= -->
+## What is front-end?
+### 1. Prerequisite
+N/A
+### 2. What is it?
+### 3. Why it's important
+### 4. How much I need to know?
+### 5. Resources
+### 6. Time frame
+<!-- ============================================================================= -->
 ## HTML
 ### 1. Prerequisite
 N/A
@@ -63,7 +74,7 @@ As this is the standard for writing websites or web pages, it is important to le
   - class (when we start using CSS)
   - id
 - styles
-- color
+- colour
 - comments
 - elements
   - head
@@ -83,6 +94,8 @@ As this is the standard for writing websites or web pages, it is important to le
 - accessibility
 
 You can learn these from [W3Schools HTML Tutorial][html-resource-2]. If you want to learn more about HTML best practices, you can check out the following link: [https://github.com/hail2u/html-best-practices][html-resource-3]
+
+***As an addition***, I recommend learning about the DOM in using the following link [https://www.w3schools.com/js/js_htmldom.asp][html-resource-4]
 ### 5. Resources
 **What HTML is?**
 - What is HyperText ([https://www.w3.org/WhatIs.html][html-resource-0])
@@ -99,6 +112,7 @@ You can learn these from [W3Schools HTML Tutorial][html-resource-2]. If you want
 [html-resource-1]: https://www.britannica.com/technology/markup-language
 [html-resource-2]: https://www.w3schools.com/html/default.asp
 [html-resource-3]: https://github.com/hail2u/html-best-practices
+[html-resource-4]: https://www.w3schools.com/js/js_htmldom.asp
 <!-- ============================================================================= -->
 ## CSS
 ### 1. Prerequisite
@@ -114,7 +128,7 @@ The basics can be learned on [W3Schools][css-resource-0]. They include the follo
 - CSS syntax
 - selectors
 - comments
-- colors
+- colour
 - padding
 - margin
 - borders
@@ -138,15 +152,70 @@ However, for the advanced techniques, and an overall better understanding of CSS
 ### 1. Prerequisite
 N/A
 ### 2. What is it?
-
+JavaScript is the most popular programming language. It is easy to learn compared to many other programming languages. You may come across JavaScript being associated with ES5 or ES6/ES2015 (ES is short for EcmaScript). These are the version standards that JavaScript has to abide by. Meaning that EcmaScript forms the basis of JavaScript as it standardizes the .
 ### 3. Why it's important
-
+JavaScript is a programming language that is meant to be used to program the behaviour of a web page. By using JavaScript for your web page, you enable the ability to make the web page interactive. This allows users to engage with the web page by seeing a response to the actions they perform (button click, typing, etc.).
 ### 4. How much I need to know?
+To understand more about JavaScript and EcmaScript, refer to the following link: [https://www.freecodecamp.org/news/whats-the-difference-between-javascript-and-ecmascript-cba48c73a2b5/][js-resource-0]
+
+It is required to know what a DOM is, refer to the following link: [https://www.w3schools.com/js/js_htmldom.asp][js-resource-1]
+
+In modern web development (using a JavaScript framework), it's not required to know how to manipulate the DOM using vanilla JavaScript. Thus, DOM manipulation with vanilla JS will not be considered here. It is required to understand the basics of a programming language using JavaScript instead. All of which can be learned using the following link: [https://www.w3schools.com/js/default.asp][js-resource-2]
+
+It is required to understand the following: 
+- JavaScript syntax
+- statements
+- comments
+- variables
+- let
+- const
+- operators
+- arithmetic
+- assignment
+- data types
+- functions
+- arrow functions
+- objects
+- booleans
+- conditions
+- for loops
+- while loops
+- sets
+- maps
+- type conversion
+- strings
+- string methods
+- numbers
+- number methods
+- arrays
+- array methods
+- array iteration
+- date formats
+- hoisting
+- this keyword
+
+On top of understanding the above material, I recommend learning the best practices while using JavaScript as outlined in the following link: [https://www.w3schools.com/js/js_best_practices.asp][js-resource-3]
 ### 5. Resources
+- What’s the difference between JavaScript and ECMAScript? ([https://www.freecodecamp.org/news/whats-the-difference-between-javascript-and-ecmascript-cba48c73a2b5/][js-resource-0])
+- JavaScript HTML DOM ([https://www.w3schools.com/js/js_htmldom.asp][js-resource-1])
+- JavaScript Tutorial ([https://www.w3schools.com/js/default.asp][js-resource-2])
+- JavaScript Best Practices ([https://www.w3schools.com/js/js_best_practices.asp][js-resource-3])
 ### 6. Time frame
 
 <!-- javascript links -->
-[js-resource-0]: https://www.w3schools.com/js/default.asp
+[js-resource-0]: https://www.freecodecamp.org/news/whats-the-difference-between-javascript-and-ecmascript-cba48c73a2b5/
+[js-resource-1]: https://www.w3schools.com/js/js_htmldom.asp
+[js-resource-2]: https://www.w3schools.com/js/default.asp
+[js-resource-3]: https://www.w3schools.com/js/js_best_practices.asp
+<!-- ============================================================================= -->
+## What is back-end?
+### 1. Prerequisite
+N/A
+### 2. What is it?
+### 3. Why it's important
+### 4. How much I need to know?
+### 5. Resources
+### 6. Time frame
 <!-- ============================================================================= -->
 ## Extended Learning
 
