@@ -17,15 +17,13 @@ The topics covered within the roadmap will be in the following format:
 Feel to start wherever you'd like. :)
 <!-- ============================================================================= -->
 ## Table of Content
-  - [Introduction](#introduction)
-  - [How To Read This Document](#how-to-read-this-document)
   - [Understanding the Internet](#understanding-the-internet)
   - [What is front-end?](#what-is-front-end)
   - [HTML](#html)
   - [CSS](#css)
   - [JavaScript](#javascript)
   - [React (JavaScript Library)](#react-javascript-library)
-  - [Git and GitHub](#git-and-github)
+  - [Git](#git)
   - [What is back-end?](#what-is-back-end)
 <!-- ============================================================================= -->
 ## Understanding the Internet
@@ -249,15 +247,55 @@ There are many great resources to get started with React. I recommend learning R
 [react-resource-2]: https://reactjs.org/tutorial/tutorial.html#setup-for-the-tutorial
 [react-resource-3]: https://reactjs.org/docs/hello-world.html
 <!-- ============================================================================= -->
-## Git and GitHub
+## Git
 ### 1. Prerequisite
 N/A
 ### 2. What is it?
+Git is a free and open source distributed [version control system][git-resource-0]. It is used to separate an application's main code from the code that will be developed for a feature or a bugfix. Once the feature or bugfix is coded, it is ready to be merged with the main code.
 ### 3. Why it's important
+Git allows you to separate an application's main code from the code that will be developed for a feature or a bugfix. This separation of concerns allows many developers to work on the same application, at the same time. It is also used to track the changes to the code.
 ### 4. How much I need to know?
-### 5. Resources
-### 6. Time frame
+Git's "branching" strategy is important to know. The branching strategy starts with the application's main code. We can branch off from the application's main code, which is like creating a snapshot of the main code and with the snapshot, you can make changes to it. Git is the de facto standard when it comes to version control. Thus it is required to know how it works and some of the basics. To learn more about Git and how it works, refer to the following topics and links:
+- branches ([https://www.atlassian.com/git/tutorials/using-branches][git-resource-1])
+- git checkout ([https://www.atlassian.com/git/tutorials/using-branches/git-checkout][git-resource-2])
+- git merge ([https://www.atlassian.com/git/tutorials/using-branches/git-merge][git-resource-3])
+- merge conflicts ([https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts][git-resource-4])
+- syncing ([https://www.atlassian.com/git/tutorials/syncing][git-resource-5])
+- git fetch ([https://www.atlassian.com/git/tutorials/syncing/git-fetch][git-resource-6])
+- git push ([https://www.atlassian.com/git/tutorials/syncing/git-push][git-resource-7])
+- git pull ([https://www.atlassian.com/git/tutorials/syncing/git-pull][git-resource-8])
 
+Git is a command line tool, however, it is integrated with many IDE's to make it friendlier to use. However, I recommend learning the Git using the command line to understand the different commands that exists.
+
+After learning the Git concepts and some of the Git commands, I recommend going through each of the sections under "Getting Started". From each of the sections, you will learn the remaining Git commands that are commonly used by many software developers. The sections are found here: [https://www.atlassian.com/git/tutorials/setting-up-a-repository][git-resource-9] and sections include:
+- setting up a repository
+- saving changes
+- inspecting a repository
+- undoing changes
+- rewriting history
+
+### 5. Resources
+- branches ([https://www.atlassian.com/git/tutorials/using-branches][git-resource-1])
+- git checkout ([https://www.atlassian.com/git/tutorials/using-branches/git-checkout][git-resource-2])
+- git merge ([https://www.atlassian.com/git/tutorials/using-branches/git-merge][git-resource-3])
+- merge conflicts ([https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts][git-resource-4])
+- syncing ([https://www.atlassian.com/git/tutorials/syncing][git-resource-5])
+- git fetch ([https://www.atlassian.com/git/tutorials/syncing/git-fetch][git-resource-6])
+- git push ([https://www.atlassian.com/git/tutorials/syncing/git-push][git-resource-7])
+- git pull ([https://www.atlassian.com/git/tutorials/syncing/git-pull][git-resource-8])
+### 6. Time frame
+~ 1 week
+
+[git-resource-0]: https://www.atlassian.com/git/tutorials/what-is-version-control
+[git-resource-1]: https://www.atlassian.com/git/tutorials/using-branches
+[git-resource-2]: https://www.atlassian.com/git/tutorials/using-branches/git-checkout
+[git-resource-3]: https://www.atlassian.com/git/tutorials/using-branches/git-merge
+[git-resource-4]: https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts
+[git-resource-5]: https://www.atlassian.com/git/tutorials/syncing
+[git-resource-6]: https://www.atlassian.com/git/tutorials/syncing/git-fetch
+[git-resource-7]: https://www.atlassian.com/git/tutorials/syncing/git-push
+[git-resource-8]: https://www.atlassian.com/git/tutorials/syncing/git-pull
+[git-resource-9]: https://www.atlassian.com/git/tutorials/setting-up-a-repository
 <!-- ============================================================================= -->
 ## What is back-end?
 ### 1. Prerequisite
