@@ -1,4 +1,6 @@
-# WEB-DEVELOPMENT-ROADMAP
+# WEB DEVELOPMENT ROADMAP (2022)
+<!-- ============================================================================= -->
+Some of the topics in this roadmap are still being updated. Thus, topics in the [Table of Contents](#table-of-contents) that have the symbol "⚠" are not fully completed.
 <!-- ============================================================================= -->
 ## Introduction
 The roadmap proposed here is meant for those that are getting started with web development and have a general interest towards it. Whether you're getting started or an experienced developer, this document can be useful to learning the topics that you need to know to be successful in web development. No previous knowledge is required. However, an open mind is appreciated as there will a lot of topics covered within this roadmap.
@@ -16,15 +18,24 @@ The topics covered within the roadmap will be in the following format:
 
 Feel to start wherever you'd like. :)
 <!-- ============================================================================= -->
-## Table of Content
+## Table of Contents
   - [Understanding the Internet](#understanding-the-internet)
-  - [What is front-end?](#what-is-front-end)
+  - [What is front-end? ⚠](#what-is-front-end)
   - [HTML](#html)
   - [CSS](#css)
   - [JavaScript](#javascript)
   - [React (JavaScript Library)](#react-javascript-library)
+  - [Redux ⚠](#redux)
+  - [HTTP, HTTPS ⚠](#http-https)
+  - [CORS ⚠](#cors)
   - [Git](#git)
-  - [What is back-end?](#what-is-back-end)
+  - [GitHub ⚠](#github)
+  - [What is back-end? ⚠](#what-is-back-end)
+  - [Node.js ⚠](#nodejs)
+  - [Express (Node.js framework) ⚠](#express-nodejs-framework)
+  - [What is a Database? ⚠](#what-is-a-database)
+  - [MongoDB ⚠](#mongodb)
+  - [Extended Learning ⚠](#extended-learning)
 <!-- ============================================================================= -->
 ## Understanding the Internet
 ### 1. Prerequisite
@@ -152,7 +163,7 @@ However, for the advanced techniques, and an overall better understanding of CSS
 ### 1. Prerequisite
 N/A
 ### 2. What is it?
-JavaScript is the most popular programming language. It is easy to learn compared to many other programming languages. You may come across JavaScript being associated with ES5 or ES6/ES2015 (ES is short for EcmaScript). These are the version standards that JavaScript has to abide by. Meaning that EcmaScript forms the basis of JavaScript as it standardizes the .
+JavaScript is the most popular programming language. It is easy to learn compared to many other programming languages. You may come across JavaScript being associated with ES5 or ES6/ES2015 (ES is short for EcmaScript). These are the version standards that JavaScript has to abide by. Meaning that EcmaScript forms the basis of JavaScript as it standardizes the language.
 ### 3. Why it's important
 JavaScript is a programming language that is meant to be used to program the behaviour of a web page. By using JavaScript for your web page, you enable the ability to make the web page interactive. This allows users to engage with the web page by seeing a response to the actions they perform (button click, typing, etc.).
 ### 4. How much I need to know?
@@ -238,6 +249,10 @@ For React, it is required that you learn the "Main Concepts" as outlined on the 
 
 There are many great resources to get started with React. I recommend learning React either by following the tutorial on the official React website [https://reactjs.org/tutorial/tutorial.html][react-resource-2] or by following along with the following video by Kent C. Dodds, creator of React Testing Library: [https://egghead.io/courses/the-beginner-s-guide-to-react][react-resource-1]
 ### 5. Resources
+- StackOverflow's 2021 developer survey, most popular technologies ([https://insights.stackoverflow.com/survey/2021#most-popular-technologies-webframe][react-resource-0])
+- The beginner's guide to React, Kent C. Dodds ([https://egghead.io/courses/the-beginner-s-guide-to-react][react-resource-1])
+- Setup React Tutorial ([https://reactjs.org/tutorial/tutorial.html#setup-for-the-tutorial][react-resource-2])
+- React main concepts ([https://reactjs.org/docs/hello-world.html][react-resource-3])
 ### 6. Time frame
 ~ 2 weeks
 
@@ -247,9 +262,48 @@ There are many great resources to get started with React. I recommend learning R
 [react-resource-2]: https://reactjs.org/tutorial/tutorial.html#setup-for-the-tutorial
 [react-resource-3]: https://reactjs.org/docs/hello-world.html
 <!-- ============================================================================= -->
+## Redux
+### 1. Prerequisite
+- React ([main concepts][react-resource-3]) 
+### 2. What is it?
+### 3. Why it's important
+### 4. How much I need to know?
+### 5. Resources
+### 6. Time frame
+
+[]:
+[]:
+[]:
+<!-- ============================================================================= -->
+## HTTP, HTTPS
+### 1. Prerequisite
+- React ([main concepts][react-resource-3]) 
+### 2. What is it?
+### 3. Why it's important
+### 4. How much I need to know?
+### 5. Resources
+### 6. Time frame
+
+[]:
+[]:
+[]:
+<!-- ============================================================================= -->
+## CORS
+### 1. Prerequisite
+- React ([main concepts][react-resource-3]) 
+### 2. What is it?
+### 3. Why it's important
+### 4. How much I need to know?
+### 5. Resources
+### 6. Time frame
+
+[]:
+[]:
+[]:
+<!-- ============================================================================= -->
 ## Git
 ### 1. Prerequisite
-N/A
+- Download and install Git ([https://github.com/git-guides/install-git](https://github.com/git-guides/install-git))
 ### 2. What is it?
 Git is a free and open source distributed [version control system][git-resource-0]. It is used to separate an application's main code from the code that will be developed for a feature or a bugfix. Once the feature or bugfix is coded, it is ready to be merged with the main code.
 ### 3. Why it's important
@@ -297,6 +351,19 @@ After learning the Git concepts and some of the Git commands, I recommend going 
 [git-resource-8]: https://www.atlassian.com/git/tutorials/syncing/git-pull
 [git-resource-9]: https://www.atlassian.com/git/tutorials/setting-up-a-repository
 <!-- ============================================================================= -->
+## GitHub
+### 1. Prerequisite
+- [Git](#git)
+### 2. What is it?
+### 3. Why it's important
+### 4. How much I need to know?
+### 5. Resources
+### 6. Time frame
+
+[]:
+[]:
+[]:
+<!-- ============================================================================= -->
 ## What is back-end?
 ### 1. Prerequisite
 N/A
@@ -306,6 +373,45 @@ N/A
 ### 5. Resources
 ### 6. Time frame
 <!-- ============================================================================= -->
+## Node.js
+### 1. Prerequisite
+N/A
+### 2. What is it?
+### 3. Why it's important
+### 4. How much I need to know?
+### 5. Resources
+### 6. Time frame
+<!-- ============================================================================= -->
+## Express (Node.js framework)
+### 1. Prerequisite
+N/A
+### 2. What is it?
+### 3. Why it's important
+### 4. How much I need to know?
+### 5. Resources
+### 6. Time frame
+<!-- ============================================================================= -->
+## What is a Database?
+### 1. Prerequisite
+N/A
+### 2. What is it?
+### 3. Why it's important
+### 4. How much I need to know?
+### 5. Resources
+### 6. Time frame
+<!-- ============================================================================= -->
+## MongoDB
+### 1. Prerequisite
+N/A
+### 2. What is it?
+### 3. Why it's important
+### 4. How much I need to know?
+### 5. Resources
+### 6. Time frame
+<!-- ============================================================================= -->
 ## Extended Learning
+### Frontend
+### Backend
+### Database
 
 <!-- ============================================================================= -->
