@@ -1,6 +1,6 @@
-# WEB DEVELOPMENT ROADMAP (2022)
+# SIMPLE WEB DEVELOPMENT ROADMAP (2022)
 <!-- ============================================================================= -->
-Some of the topics in this roadmap are still being updated. Thus, topics in the [Table of Contents](#table-of-contents) that have the symbol "⚠" are not fully completed.
+❗ Some of the topics in this roadmap are still being updated. Thus, topics in the [Table of Contents](#table-of-contents) that have the symbol "⚠" are not fully completed.
 <!-- ============================================================================= -->
 ## Introduction
 The roadmap proposed here is meant for those that are getting started with web development and have a general interest towards it. Whether you're getting started or an experienced developer, this document can be useful to learning the topics that you need to know to be successful in web development. No previous knowledge is required. However, an open mind is appreciated as there will a lot of topics covered within this roadmap.
@@ -20,21 +20,21 @@ Feel to start wherever you'd like. :)
 <!-- ============================================================================= -->
 ## Table of Contents
   - [Understanding the Internet](#understanding-the-internet)
-  - [What is front-end? ⚠](#what-is-front-end)
-  - [HTML](#html)
-  - [CSS](#css)
-  - [JavaScript](#javascript)
-  - [React (JavaScript Library)](#react-javascript-library)
-  - [Redux ⚠](#redux)
-  - [HTTP, HTTPS ⚠](#http-https)
-  - [CORS ⚠](#cors)
+  - [What is front-end?](#what-is-front-end)
+    - [HTML](#html)
+    - [CSS](#css)
+    - [JavaScript](#javascript)
+    - [React (JavaScript Library)](#react-javascript-library)
+    - [Redux, Redux Toolkit](#redux-redux-toolkit)
+    - [HTTP, HTTPS](#http-https)
+    - [CORS ⚠](#cors)
   - [Git](#git)
   - [GitHub ⚠](#github)
   - [What is back-end? ⚠](#what-is-back-end)
-  - [Node.js ⚠](#nodejs)
-  - [Express (Node.js framework) ⚠](#express-nodejs-framework)
+    - [Node.js ⚠](#nodejs)
+    - [Express (Node.js framework) ⚠](#express-nodejs-framework)
   - [What is a Database? ⚠](#what-is-a-database)
-  - [MongoDB ⚠](#mongodb)
+    - [MongoDB ⚠](#mongodb)
   - [Extended Learning ⚠](#extended-learning)
 <!-- ============================================================================= -->
 ## Understanding the Internet
@@ -60,12 +60,23 @@ I've simplified the above explanation of the internet so that you can understand
 <!-- ============================================================================= -->
 ## What is front-end?
 ### 1. Prerequisite
-N/A
+- [Understanding the Internet](#understanding-the-internet)
 ### 2. What is it?
+Frontend is the information that a user sees when they access a website. During the process that a user enters a url to a website, another computer sends back information (I will be skipping DNS in this example, to simplify the explanation) in the form of HTML, CSS, and JavaScript. This information is understood by the browser to display the the exact layout and design the web developer intends the website page to be displayed.
 ### 3. Why it's important
+As the frontend is what the user will see, and as per the explanation in [What is it?](#2-what-is-it-1), it is thus required to know HTML, CSS, and JavaScript (with a JavaScript library/framework such as React, Angular, or Vue).
 ### 4. How much I need to know?
+This may vary with every person, but in this roadmap, I give an outline of a path and what I believe should be known in each of the topics for a frontend developer.
 ### 5. Resources
+- [HTML](#html)
+- [CSS](#css)
+- [JavaScript](#javascript)
+- [React](#react-javascript-library)
+- [Redux, Redux Toolkit](#redux-redux-toolkit)
+- [HTTP, HTTPS](#http-https)
+- [CORS](#cors)
 ### 6. Time frame
+N/A
 <!-- ============================================================================= -->
 ## HTML
 ### 1. Prerequisite
@@ -247,12 +258,15 @@ For React, it is required that you learn the "Main Concepts" as outlined on the 
 - composition vs inheritance
 - thinking in react
 
+As an addition, React introduces an idea of a [virtual DOM][react-resource-4]. I would also suggest learning this as well.
+
 There are many great resources to get started with React. I recommend learning React either by following the tutorial on the official React website [https://reactjs.org/tutorial/tutorial.html][react-resource-2] or by following along with the following video by Kent C. Dodds, creator of React Testing Library: [https://egghead.io/courses/the-beginner-s-guide-to-react][react-resource-1]
 ### 5. Resources
 - StackOverflow's 2021 developer survey, most popular technologies ([https://insights.stackoverflow.com/survey/2021#most-popular-technologies-webframe][react-resource-0])
 - The beginner's guide to React, Kent C. Dodds ([https://egghead.io/courses/the-beginner-s-guide-to-react][react-resource-1])
 - Setup React Tutorial ([https://reactjs.org/tutorial/tutorial.html#setup-for-the-tutorial][react-resource-2])
 - React main concepts ([https://reactjs.org/docs/hello-world.html][react-resource-3])
+- React Virtual DOM ([https://reactjs.org/docs/faq-internals.html#:~:text=The%20virtual%20DOM%20(VDOM)%20is,This%20process%20is%20called%20reconciliation.&text=They%20may%20also%20be%20considered,virtual%20DOM%E2%80%9D%20implementation%20in%20React.][react-resource-4])
 ### 6. Time frame
 ~ 2 weeks
 
@@ -261,36 +275,94 @@ There are many great resources to get started with React. I recommend learning R
 [react-resource-1]: https://egghead.io/courses/the-beginner-s-guide-to-react
 [react-resource-2]: https://reactjs.org/tutorial/tutorial.html#setup-for-the-tutorial
 [react-resource-3]: https://reactjs.org/docs/hello-world.html
+[react-resource-4]: https://reactjs.org/docs/faq-internals.html#:~:text=The%20virtual%20DOM%20(VDOM)%20is,This%20process%20is%20called%20reconciliation.&text=They%20may%20also%20be%20considered,virtual%20DOM%E2%80%9D%20implementation%20in%20React.
 <!-- ============================================================================= -->
-## Redux
+## Redux, Redux Toolkit
 ### 1. Prerequisite
-- React ([main concepts][react-resource-3]) 
+- React ([main concepts][react-resource-3])
 ### 2. What is it?
+Redux is a *predictable* state container. It is used in React development to maintain states between different components. Redux Toolkit, a library for writing Redux, is the recommended approach to writing Redux logic.
 ### 3. Why it's important
+As React applications become more complex, a state container allows certain states to persist throughout the application. Often, state is usually contained within the component, and when the component is taken down from the DOM, the state is lost. With Redux, we can maintain the state inside a container and modify it preditably with predefined "actions".
 ### 4. How much I need to know?
-### 5. Resources
-### 6. Time frame
+To get started with Redux, I suggest reading the following link to get an introduction into using Redux and Redux Toolkit ([https://redux.js.org/introduction/getting-started][redux-resource-0]).
 
-[]:
-[]:
-[]:
+For an overview of Redux, refer to the following link: [(https://redux.js.org/tutorials/fundamentals/part-1-overview)][redux-resource-1]
+
+At the core of Redux, you must understand its ideas:
+- state
+- actions
+- dispatch
+- reducers
+- selectors
+- store
+
+The following resources below can be used to understand the ideas outlined above:
+- [https://redux.js.org/tutorials/fundamentals/part-2-concepts-data-flow][redux-resource-2]
+- [https://redux.js.org/tutorials/fundamentals/part-3-state-actions-reducers][redux-resource-3]
+- [https://redux.js.org/tutorials/fundamentals/part-4-store][redux-resource-4]
+### 5. Resources
+- Getting Started with Redux ([https://redux.js.org/introduction/getting-started][redux-resource-0])
+- Redux Overview ([https://redux.js.org/tutorials/fundamentals/part-1-overview][redux-resource-1])
+- Concepts and data flow ([https://redux.js.org/tutorials/fundamentals/part-2-concepts-data-flow][redux-resource-2])
+- State, Actions, and Reducers ([https://redux.js.org/tutorials/fundamentals/part-3-state-actions-reducers][redux-resource-3])
+- Redux Store ([https://redux.js.org/tutorials/fundamentals/part-4-store][redux-resource-4])
+### 6. Time frame
+~ 1 week
+
+[redux-resource-0]: https://redux.js.org/introduction/getting-started
+[redux-resource-1]: https://redux.js.org/tutorials/fundamentals/part-1-overview
+[redux-resource-2]: https://redux.js.org/tutorials/fundamentals/part-2-concepts-data-flow
+[redux-resource-3]: https://redux.js.org/tutorials/fundamentals/part-3-state-actions-reducers
+[redux-resource-4]: https://redux.js.org/tutorials/fundamentals/part-4-store
 <!-- ============================================================================= -->
 ## HTTP, HTTPS
 ### 1. Prerequisite
-- React ([main concepts][react-resource-3]) 
+- [Understanding the Internet](#understanding-the-internet)
 ### 2. What is it?
-### 3. Why it's important
-### 4. How much I need to know?
-### 5. Resources
-### 6. Time frame
+HTTP is an application-layer protocol for sending hypermedia documents, such as HTML, over the network. We can also send information in the form of XML or JSON, and media types such as images or videos.
 
-[]:
-[]:
-[]:
+HTTPS is the same as HTTP, with the addition that the data that is sent is being encrypted using a public key and decrypted using a private key. 
+### 3. Why it's important
+HTTP is the protocol that is widely used to send information between a client and a server. It standardizes the format the information should be sent during a client and server interaction.
+
+HTTPS, on the other hand, prevents the information that is sent to be seen in plain text by hackers intercepting the information that is being sent. Instead, they will see an encrypted message used with the public key and only the server will be able to decrypt this message as they will have the private key.
+### 4. How much I need to know?
+With HTTP, It is required to know the basics, which includes:
+- HTTP request
+  - HTTP method
+  - url
+  - headers
+  - version of the HTTP protocol
+  - optional request body
+- HTTP response
+  - status code
+  - status message
+  - headers
+  - version of the HTTP protocol
+  - optional response body
+
+It is also required to know the aspects of HTTP, which includes:
+- HTTP is simple
+- HTTP is extensible
+- HTTP is stateless, but not sessionless
+- HTTP and connections
+
+All of the above can be learned from the following link: [https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview][http-https-resource-0]
+
+When it comes to HTTPS, I recommend understanding the encryption technique used. You can find out more about that in the following link: [https://www.cloudflare.com/en-ca/learning/ssl/how-does-public-key-encryption-work/][http-https-resource-1]
+### 5. Resources
+- An overview of HTTP ([https://developer.mozilla.org/en-US/docs/Web/HTTP][http-https-resource-0])
+- How does public key encryption work? ([https://www.cloudflare.com/en-ca/learning/ssl/how-does-public-key-encryption-work/][http-https-resource-1])
+### 6. Time frame
+~ 2 day
+
+[http-https-resource-0]: https://developer.mozilla.org/en-US/docs/Web/HTTP
+[http-https-resource-1]: https://www.cloudflare.com/en-ca/learning/ssl/how-does-public-key-encryption-work/
 <!-- ============================================================================= -->
 ## CORS
 ### 1. Prerequisite
-- React ([main concepts][react-resource-3]) 
+- [HTTP](#http-https)
 ### 2. What is it?
 ### 3. Why it's important
 ### 4. How much I need to know?
