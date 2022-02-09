@@ -6,32 +6,32 @@
 The roadmap proposed here is meant for those that are getting started with web development and have a general interest towards it. Whether you're getting started or an experienced developer, this document can be useful to learning the topics that you need to know to be successful in web development. No previous knowledge is required. However, an open mind is appreciated as there will a lot of topics covered within this roadmap.
 <!-- ============================================================================= -->
 ## How To Read This Document
-I suggest reading this document in sequence starting from the beginning at [Understanding the Internet](#understanding-the-internet) and ending on [insert topic here](#insert-topic-here). Each topic may require background knowledge of the previous topics. If this is the case, it will be highlighted in the Prerequisite heading.
+I suggest reading this document in sequence starting from the beginning at [Understanding the Internet](#understanding-the-internet) and ending on [What is a Database?](#what-is-a-database). Each topic may require background knowledge of the previous topics. If this is the case, it will be highlighted in the Prerequisite heading.
 
 The topics covered within the roadmap will be in the following format:
 1. **Prerequisite**
 2. **What** is it?
 3. **Why** it's important
 4. **How much** I need to know
-5. **Resources**
+5. **Resources** (links that were mentioned in the topic or to learn more about it)
 6. **Time frame**
 
 Feel to start wherever you'd like. :)
 <!-- ============================================================================= -->
 ## Table of Contents
   - [Understanding the Internet](#understanding-the-internet)
-  - [What is front-end?](#what-is-front-end)
+  - [What is frontend?](#what-is-frontend)
     - [HTML](#html)
     - [CSS](#css)
     - [JavaScript](#javascript)
     - [React (JavaScript Library)](#react-javascript-library)
     - [Redux, Redux Toolkit](#redux-redux-toolkit)
     - [HTTP, HTTPS](#http-https)
-    - [CORS ⚠](#cors)
+    - [CORS](#cors)
   - [Git](#git)
-  - [GitHub ⚠](#github)
-  - [What is back-end? ⚠](#what-is-back-end)
-    - [Node.js ⚠](#nodejs)
+  - [GitHub](#github)
+  - [What is backend?](#what-is-backend)
+    - [Node.js](#nodejs)
     - [Express (Node.js framework) ⚠](#express-nodejs-framework)
   - [What is a Database? ⚠](#what-is-a-database)
     - [MongoDB ⚠](#mongodb)
@@ -58,7 +58,7 @@ I've simplified the above explanation of the internet so that you can understand
 [understanding-the-internet-resource-1]: https://www.hp.com/us-en/shop/tech-takes/how-does-the-internet-work
 [understanding-the-internet-resource-2]: https://techterms.com/definition/internet
 <!-- ============================================================================= -->
-## What is front-end?
+## What is frontend?
 ### 1. Prerequisite
 - [Understanding the Internet](#understanding-the-internet)
 ### 2. What is it?
@@ -237,7 +237,7 @@ On top of understanding the above material, I recommend learning the best practi
 <!-- ============================================================================= -->
 ## React (JavaScript Library)
 ### 1. Prerequisite
-- JavaScript, with ES6
+- [JavaScript](#javascript), with ES6
 ### 2. What is it?
 React is a JavaScript library for building user interfaces. React revolves around the idea of building encapsulated components, where each component manages their own state.
 ### 3. Why it's important
@@ -364,14 +364,21 @@ When it comes to HTTPS, I recommend understanding the encryption technique used.
 ### 1. Prerequisite
 - [HTTP](#http-https)
 ### 2. What is it?
+Cross origin resource sharing (CORS) uses HTTP headers to indicate which origins () can access the server.
 ### 3. Why it's important
+By default (due to security reasons), browsers do not permit the use of other resources from other origins other than its own (website.com/frontend must call website.com/backend, cannot call websites.com/backend). However, by specifying a specific header in the client response with the value of the client's origin, we allow the server resource to be used by the client's origin.
 ### 4. How much I need to know?
-### 5. Resources
-### 6. Time frame
+There isn't much to know about CORS. However, if the above explanation doesn't cut it for you, the following YouTube video by WebDevSimplified does a good job showing you how it works: [https://www.youtube.com/watch?v=PNtFSVU-YTI][cors-resource-1]
 
-[]:
-[]:
-[]:
+If you want learn more about CORS, refer to the following link: [https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS][cors-resource-0]
+### 5. Resources
+- Cross-Origin Resource Sharing (CORS) ([https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS][cors-resource-0])
+- WebDevSimplified Learn CORS In 6 Minutes ([https://www.youtube.com/watch?v=PNtFSVU-YTI][cors-resource-1])
+### 6. Time frame
+~ 1 hour
+
+[cors-resource-0]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+[cors-resource-1]: https://www.youtube.com/watch?v=PNtFSVU-YTI
 <!-- ============================================================================= -->
 ## Git
 ### 1. Prerequisite
@@ -427,36 +434,85 @@ After learning the Git concepts and some of the Git commands, I recommend going 
 ### 1. Prerequisite
 - [Git](#git)
 ### 2. What is it?
+GitHub is a platform that can be used as a repository for the code that you write. How do you add the code you write from your computer to GitHub? With Git. A repository is nothing but a folder on GitHub that contains all the files for your application.
 ### 3. Why it's important
+GitHub is free to use and is widely used in open-source projects. It is also easy to use and contains many other tools like hosting with GitHub Pages, sharing code snippets with Git Gist, or continuous integration workflows with GitHub Actions.
 ### 4. How much I need to know?
-### 5. Resources
-### 6. Time frame
+Knowing how to setup your code repo with GitHub is a must. However, we must setup Git with GitHub. You can use the following to learn how: [https://docs.github.com/en/get-started/quickstart/set-up-git][github-resource-0]. The setup will include authentication with GitHub from Git. There will be two approaches: connecting over HTTPS (recommended by GitHub) and connecting over SSH. Either approach is fine.
 
-[]:
-[]:
-[]:
-<!-- ============================================================================= -->
-## What is back-end?
-### 1. Prerequisite
-N/A
-### 2. What is it?
-### 3. Why it's important
-### 4. How much I need to know?
+- Setting authentication (HTTPS): [https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git][github-resource-1]
+- Setting authentication (SSH):  [https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent][github-resource-2]
+
+Once Git has been setup, you're now ready to create a repository and add your code to it. You can learn how to do that with the following link: [https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line][github-resource-3].
+
+This is also where you need to know common Git commands such as:
+- `git add` ([https://www.atlassian.com/git/tutorials/saving-changes#:~:text=The%20git%20add%20command%20adds,until%20you%20run%20git%20commit%20.][github-resource-4])
+- `git commit` ([https://www.atlassian.com/git/tutorials/saving-changes/git-commit][github-resource-5])
 ### 5. Resources
+- Set up Git ([https://docs.github.com/en/get-started/quickstart/set-up-git][github-resource-0])
+- GitHub CLI ([https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git][github-resource-1])
+- Generating a new SSH key and adding it to the ssh-agent ([https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent][github-resource-2])
+- Adding an existing project to GitHub using the command line ([https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line][github-resource-3])
+- Saving changes ([https://www.atlassian.com/git/tutorials/saving-changes#:~:text=The%20git%20add%20command%20adds,until%20you%20run%20git%20commit%20.][github-resource-4])
+- Git commit ([https://www.atlassian.com/git/tutorials/saving-changes/git-commit][github-resource-5])
+### 6. Time frame
+~ 3 days
+
+[github-resource-0]: https://docs.github.com/en/get-started/quickstart/set-up-git
+[github-resource-1]: https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git
+[github-resource-2]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+[github-resource-3]: https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line
+[github-resource-4]: https://www.atlassian.com/git/tutorials/saving-changes#:~:text=The%20git%20add%20command%20adds,until%20you%20run%20git%20commit%20.
+[github-resource-5]: https://www.atlassian.com/git/tutorials/saving-changes/git-commit
+<!-- ============================================================================= -->
+## What is backend?
+### 1. Prerequisite
+- [Understanding the Internet](#understanding-the-internet)
+### 2. What is it?
+Backend is the place where information is being saved or information is being accessed (from database(s) or from APIs). As backend code does not have an interface for users to see, users will not be seeing this on their browsers at all.
+### 3. Why it's important
+As mentioned, the backend is the place where information is being saved or information is being accessed (from database(s) or from APIs). This information is then passed to the frontend to be used.
+
+Knowing what the backend is capable of also allows us to separate concerns from the frontend, hence why many job postings mention "frontend" or "backend" or even "fullstack" (knowing both frontend and backend) engineers.
+### 4. How much I need to know?
+This may vary with every person, but in this roadmap, I give an outline of a path with the minimum requirements of what I believe should be known for a backend developer.
+### 5. Resources
+- [Node.js](#nodejs)
+- [Express (Node.js framework)](#express-nodejs-framework)
 ### 6. Time frame
 <!-- ============================================================================= -->
 ## Node.js
 ### 1. Prerequisite
-N/A
+- [JavaScript](#javascript)
 ### 2. What is it?
+In the simplest explanation, Node.js is a JavaScript runtime environment used to read JavaScript code on the backend. Node.js allows code that is written in JavaScript to run on the server.
 ### 3. Why it's important
+JavaScript normally cannot run without a browser, but with Node.js, it is possible. Not only that, but JavaScript is a simple programming language and gives a friendly introduction to backend development when starting with web development or coming from frontend development.
 ### 4. How much I need to know?
+If you have npm on your computer, you already node installed. However, if this is not the case, you can install it [here][nodejs-resource-1] and click the one labeled LTS (Long term support).
+
+Although I've given a simple explanation of Node.js, the specifics about the runtime environment must be understood to use Node.js to its full potential. Thus it is required to understand the following concepts of Node.js:
+- single threaded
+- asynchronous and event-driven
+
+The above can be learned using the following link: [https://www.infoworld.com/article/3210589/what-is-nodejs-javascript-runtime-explained.html][nodejs-resource-0]
+
+To learn the capabilities of Node.js, I recommend following the all the modules outlined in the following link. It covers many of the important modules such as `fs`, `path`, `os`, `events`, and `http`, as well as understanding `process.nextTick()`, buffers and streams: [https://nodejs.dev/learn](nodejs-resource-2)
+
 ### 5. Resources
+- Node installation ([https://nodejs.org/en/][nodejs-resource-1])
+- What is Node.js? The JavaScript runtime explained ([https://www.infoworld.com/article/3210589/what-is-nodejs-javascript-runtime-explained.html][nodejs-resource-0])
+- Introduction to Node.js ([https://nodejs.dev/learn][nodejs-resource-2])
 ### 6. Time frame
+~ 2 weeks
+
+[nodejs-resource-0]: https://www.infoworld.com/article/3210589/what-is-nodejs-javascript-runtime-explained.html
+[nodejs-resource-1]: https://nodejs.org/en/
+[nodejs-resource-2]: https://nodejs.dev/learn
 <!-- ============================================================================= -->
 ## Express (Node.js framework)
 ### 1. Prerequisite
-N/A
+- [Node.js](#nodejs)
 ### 2. What is it?
 ### 3. Why it's important
 ### 4. How much I need to know?
